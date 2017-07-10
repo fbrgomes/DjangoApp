@@ -1,0 +1,15 @@
+{% include 'partials/header.html' %}
+<div class="container">
+<a href="/todos"><< Voltar</a>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">{{todo.title}}</div>
+  <div class="panel-body">
+   {{todo.text}}
+  </div>
+</div>
+
+<br>
+Criado em:  {{todo.created_at}}
+</div>
+{% include 'partials/footer.html' %}
